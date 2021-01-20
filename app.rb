@@ -1,29 +1,15 @@
-#
-# frozen_string_literal: true
-#
-# require 'sinatra'
-# require 'sinatra/reloader' if development?
-#
-# set :session_secret, 'hastings'
-#
-# The Battle class is the main game.
-# class Battle < Sinatra::Base
-#   configure :development do
-#     register Sinatra::Reloader
-#   end
-#
-#   get '/' do
-#     'Testing infrastructure working!'
-#   end
-
 # frozen_string_literal: true
 
 require 'sinatra'
 require 'sinatra/base'
-require 'shotgun'
+require 'sinatra/reloader'
 
 # The Battle class is the main game class.
 class Battle < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+  end
+
   enable :sessions
 
   get '/test_infrastructure' do
