@@ -8,6 +8,8 @@ group :test do
   gem 'rubocop'
   gem 'rubocop-rspec'
   gem 'selenium-webdriver'
+  gem 'shotgun'
   gem 'sinatra'
   gem 'sinatra-contrib'
+  gem 'webrick'
 end
