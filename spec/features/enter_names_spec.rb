@@ -12,10 +12,7 @@ feature 'Entering players' do
   end
 
   scenario 'Accepts submitted names' do
-    visit('/')
-    fill_in :player_1_name, with: 'Alfred'
-    fill_in :player_2_name, with: 'Bruce'
-    click_button 'Submit'
+    sign_in_and_play
     expect(page).to have_content('Alfred vs. Bruce')
   end
 end
