@@ -1,4 +1,8 @@
 <h1><%= @player_1_name %> vs. <%= @player_2_name %></h1>
 
 <%= @player_1_name %>'s Hit Points: 100 <br>
-<%= @player_2_name %>'s Hit Points: 100
+<%= @player_2_name %>'s Hit Points: 100 <br>
+
+<form action ='/round_1' method = 'post' >
+<input type='submit' value='Attack <%= @player_2_name %>'>
+</form>
