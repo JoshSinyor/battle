@@ -3,7 +3,7 @@
 require 'player'
 
 describe Player do
-  let(:name) { double :name }
+  let(:name){ double :name }
 
   it 'returns its own name' do
     subject = Player.new(:name)
