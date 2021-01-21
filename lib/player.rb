@@ -2,11 +2,9 @@
 
 # Each player is represented by an instance of the Player class.
 class Player
-  attr_reader :name
+  attr_reader :name, :hit_points
 
   DEFAULT_HP = 60
-
-  attr_reader :hit_points
 
   def initialize(name, hit_points = DEFAULT_HP)
     @name = name
