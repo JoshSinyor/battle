@@ -3,11 +3,11 @@
 feature 'Entering players' do
   scenario 'Displays page content instructions' do
     visit('/')
-    expect(page).to have_content('Please enter your names!')
+    expect(page).to have_content('Sign in to play.')
   end
 
   scenario 'Displays Submit button' do
-    visit ('/')
+    visit('/')
     expect(page).to have_button('Submit')
   end
 
