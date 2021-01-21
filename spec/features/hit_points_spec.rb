@@ -6,5 +6,4 @@ feature 'Checking Hit Points' do
     expect(page).to have_content("Alfred's Hit Points: 100")
     expect(page).to have_content("Bruce's Hit Points: 100")
   end
-
 end
