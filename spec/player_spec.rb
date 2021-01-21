@@ -9,4 +9,5 @@ describe Player do
     subject = Player.new(:name)
     expect(subject.name).to eq :name
   end
+
 end
