@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'game'
+
 # Each player is represented by an instance of the Player class.
 class Player
   attr_reader :name, :hit_points
@@ -11,9 +13,9 @@ class Player
     @hit_points = hit_points
   end
 
-  def attack(player)
-    player.receive_damage
-  end
+  # def attack(player)
+  #   player.receive_damage
+  # end
 
   def receive_damage
     @hit_points -= 10
